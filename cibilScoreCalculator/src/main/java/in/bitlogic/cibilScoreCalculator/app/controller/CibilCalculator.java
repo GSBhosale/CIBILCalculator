@@ -17,9 +17,9 @@ public class CibilCalculator {
 	@GetMapping("/getCibil/{panNo}")
 	public Integer getCibil(@PathVariable("panNo") String panNo)
 	{
-		if(panNo.length()==9)
+		if(panNo.length()==10)
 		{
-			return new Random().nextInt(750,900);
+			return new Random().nextInt(550,900);
 		}
 		else 
 		{
